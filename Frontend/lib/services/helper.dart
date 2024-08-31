@@ -46,7 +46,7 @@ class Helper {
 
     if(response.statusCode==200){
       final list = sneakersFromJson(response.body);
-      final kidList = list.where((element)=>element.category == "Kids' Running");
+      final kidList = list.where((element)=>element.category == "Gujrati");
       return kidList.toList();
     }else{
       throw Exception("Failed To Get Product");

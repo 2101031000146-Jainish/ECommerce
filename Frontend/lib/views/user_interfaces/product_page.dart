@@ -55,7 +55,6 @@ class _ProductPageState extends State<ProductPage> {
   Widget build(BuildContext context) {
     var favoritesNotifier = Provider.of<FavoritesNotifier>(context,listen: true);
     favoritesNotifier.getFavorites();
-    var loginProvider = Provider.of<LoginProvider>(context);
     return Scaffold(
         body: Consumer<ProductNotifier>(
           builder: (context, productNotifier, child) {
